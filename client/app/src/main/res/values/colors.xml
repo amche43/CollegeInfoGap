@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色 -->
+    <color name="primaryBlue">#1976D2</color>
+
+    <!-- 深一点的蓝 -->
+    <color name="primaryBlueDark">#1565C0</color>
+
+    <!-- 很浅的背景 -->
+    <color name="backgroundGray">#F5F7FA</color>
+
+    <!-- 卡片背景 -->
+    <color name="cardWhite">#FFFFFF</color>
+
+    <!-- 主文字 -->
+    <color name="textPrimary">#212121</color>
+
+    <!-- 次文字 -->
+    <color name="textSecondary">#757575</color>
+
+    <!-- 分割线 -->
+    <color name="divider">#E0E0E0</color>
+
+</resources>

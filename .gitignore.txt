@@ -1,0 +1,15 @@
+# Android
+client/.gradle/
+client/local.properties
+client/.idea/
+client/build/
+
+# Java
+Server/.idea/
+Server/out/
+Server/target/
+
+# System
+.DS_Store
+*.iml
+*.log

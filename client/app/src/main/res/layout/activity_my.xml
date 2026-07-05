@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryBlue"
+        app:titleCentered="true"
+        app:title="个人中心"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/toolbar"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvPostCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUsername"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnMyPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPostCount"
+        android:layout_margin="20dp"
+        android:text="我发布的帖子"
+        android:backgroundTint="@color/primaryBlue"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/btnMyPost"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+
+        android:text="我的收藏"
+        android:backgroundTint="@color/primaryBlue"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/btnFavorite"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+
+        android:text="退出登录"
+        android:backgroundTint="@color/primaryBlue"
+        android:textColor="@android:color/white"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu"/>
+
+</RelativeLayout>
