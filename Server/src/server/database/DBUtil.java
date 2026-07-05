@@ -13,7 +13,7 @@ public class DBUtil {
     private static final String USER = "root";
 
     // 你的MySQL密码
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = System.getenv("DB_PASSWORD");
 
     public static Connection getConnection() {
 
